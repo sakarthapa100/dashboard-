@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg: #1A202C; /* Darker background */
+  --bgSoft: #2D3748; /* Slightly lighter dark background */
+  --text: #E2E8F0; /* Light gray text */
+  --textSoft: #A0AEC0; /* Softer light gray text */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+
+}
+/* Tailwind CSS Example */
+.bg-primary {
+  @apply bg-gray-800; /* Dark Gray Background */
+}
+.bg-secondary {
+  @apply bg-gray-700; /* Slightly Lighter Dark Background */
+}
+.text-primary {
+  @apply text-gray-200; /* Light Gray Text */
+}
+.text-secondary {
+  @apply text-gray-400; /* Softer Light Gray Text */
+}
+.btn-primary {
+  @apply bg-blue-500 text-white; /* Blue Button with White Text */
+}
+.btn-secondary {
+  @apply bg-orange-500 text-white; /* Orange Button with White Text */
+}
+.sidebar {
+  @apply bg-gray-900 text-gray-100; /* Darker Sidebar with Light Gray Text */
+}
+.header {
+  @apply bg-gray-800 text-gray-100; /* Darker Header with Light Gray Text */
+}
