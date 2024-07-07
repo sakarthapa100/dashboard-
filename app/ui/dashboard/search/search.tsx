@@ -3,7 +3,7 @@ import { MdSearch } from 'react-icons/md';
 
 const search = ({placeholder}) => {
   return (
-    <div className='flex items-center p-1 border-r-2 border-gray-700 bg-gray-700 w-[19rem]  '>
+    <div className='flex items-center p-1 border-r-2 border-gray-700 rounded-lg  bg-gray-700 w-[19rem]  '>
     <MdSearch />
     <input 
       type="text" 
