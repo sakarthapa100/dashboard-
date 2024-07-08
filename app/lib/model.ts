@@ -9,6 +9,8 @@ interface IUser extends Document {
   isActive: boolean;
   phone?: string;
   address?: string;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 const userSchema = new mongoose.Schema<IUser>({
@@ -54,6 +56,8 @@ interface IProduct extends Document {
   stock: string;
   color?: string;
   size?: string;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 const productSchema = new mongoose.Schema<IProduct>({
